@@ -1,6 +1,6 @@
 # 示例 19 · JSON 模式
 
-> **原文**：[`test/examples/19-json.ts`](../../original/packages/durable/test/examples/19-json.ts)（在 original/packages/durable 目录下运行）
+> **原文**：[`test/examples/19-json.ts`](https://github.com/earendil-works/pi/blob/main/packages/durable/test/examples/19-json.ts)（在原仓库 `packages/durable` 目录下运行）
 >
 > ```bash
 > node --conditions=source --experimental-strip-types test/examples/19-json.ts --events "What is in this directory?"

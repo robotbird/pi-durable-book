@@ -1,6 +1,6 @@
 # 示例 06 · Harness入门
 
-> **原文**：[`test/examples/06-harness.ts`](../../original/packages/durable/test/examples/06-harness.ts)（在 original/packages/durable 目录下运行）
+> **原文**：[`test/examples/06-harness.ts`](https://github.com/earendil-works/pi/blob/main/packages/durable/test/examples/06-harness.ts)（在原仓库 `packages/durable` 目录下运行）
 >
 > ```bash
 > node --conditions=source --experimental-strip-types test/examples/06-harness.ts

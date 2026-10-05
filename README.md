@@ -24,7 +24,7 @@
 | **第三篇 设计文档** | 实现计划、Chord 使用方式、Chord 差异调研 | `docs/pico-v5-handoff.md` 等 3 篇 |
 | **第四篇 示例教程** | 32 个可运行示例的中文逐段解读，从会话基础到完整编码智能体 | `test/examples/` |
 
-原始仓库文件（含源码与测试，未翻译）完整保存在 [`original/`](original/packages/durable/README.md) 目录中，供对照查阅。
+原仓库的源码与测试未收录在本书中，可在上游仓库 [earendil-works/pi · packages/durable](https://github.com/earendil-works/pi/tree/main/packages/durable) 查阅；书中各篇的「本篇译自」引用块均已链接到对应的英文原文。
 
 ## 如何阅读
 
@@ -34,7 +34,7 @@
 
 ## 运行示例
 
-在 `original/packages/durable`（或原仓库的 `packages/durable`）目录下执行：
+克隆上游仓库后，在其 `packages/durable` 目录下执行：
 
 ```bash
 node --conditions=source --experimental-strip-types test/examples/14-chat.ts
