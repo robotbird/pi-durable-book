@@ -44,7 +44,6 @@ node --conditions=source --experimental-strip-types test/examples/14-chat.ts
 
 ## 目录
 
-- [本书导读](README.md)
 
 ## 第一篇 概述与快速上手
 
