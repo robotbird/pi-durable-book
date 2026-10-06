@@ -1,6 +1,6 @@
 # 《pi-durable：持久化智能体运行时》中文手册
 
-> 本书记录了 [`@earendil-works/pi-durable`](https://github.com/earendil-works/pi/tree/main/packages/durable) 的全部文档与示例内容，由英文原版翻译、整理而成。全书内容基于 **v1.0.2**（2026-10-04，当前 npm `latest`）。
+> 本书记录了 [`@earendil-works/pi-durable`](https://github.com/earendil-works/pi/tree/main/packages/durable) 的全部文档与示例内容，由英文原版翻译、整理而成。全书内容基于 **v1.0.4**（2026-10-05，当前 npm `latest`）。
 >
 > **原文声明**：该项目为实验性（Experimental）项目，API 可能在版本间不经通知即发生变更。
 
