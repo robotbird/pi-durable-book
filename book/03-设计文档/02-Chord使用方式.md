@@ -2,7 +2,7 @@
 
 > **本篇译自** [`docs/pico-v5-chord-usage.md`](https://github.com/earendil-works/pi/blob/main/packages/durable/docs/pico-v5-chord-usage.md)——本包对 Chord 的使用方式。
 
-本指南使用 [Pico5 规范](spec.md) 中的契约。其代码以 `test/chord-guide.test.ts` 编译并运行；请保持两者同步。
+本指南使用 [Pico5 规范](https://github.com/earendil-works/pi/blob/main/packages/durable/docs/spec.md) 中的契约。其代码以 `test/chord-guide.test.ts` 编译并运行；请保持两者同步。
 
 - **Session：** 承载会话（conversation）、条目、任务与文档的持久容器；它把所有变更串行化到一条提交执行线上。
 - **Facet：** Chord 宿主中一个功能的装配单元。setup 同步地声明服务与依赖；`onActivate` 在依赖就绪之后运行。
