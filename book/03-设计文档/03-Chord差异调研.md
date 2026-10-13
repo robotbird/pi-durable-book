@@ -1,6 +1,8 @@
 # Chord delta 调研发现
 
-> **本篇译自** [`docs/chord-delta-findings.md`](https://github.com/earendil-works/pi/blob/main/packages/durable/docs/chord-delta-findings.md)——针对 Chord 差异的调研发现。
+> **本篇译自** [`docs/chord-delta-findings.md`](https://github.com/earendil-works/pi/blob/v1.1.0/packages/durable/docs/chord-delta-findings.md)——针对 Chord 差异的调研发现。
+>
+> ⚠️ 上游已在 v1.2.0 中移除此文档（`docs/` 现仅保留 spec.md）；本篇为 v1.1.0 及之前版本的存档翻译，链接指向 v1.1.0 历史版本。
 
 ## 决定与范围
 

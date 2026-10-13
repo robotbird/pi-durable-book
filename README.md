@@ -1,6 +1,6 @@
 # 《pi-durable：持久化智能体运行时》中文手册
 
-> 本书记录了 [`@earendil-works/pi-durable`](https://github.com/earendil-works/pi/tree/main/packages/durable) 的全部文档与示例内容，由英文原版翻译、整理而成。全书内容基于 **v1.1.0**（2026-10-07，当前 npm `latest`）。
+> 本书记录了 [`@earendil-works/pi-durable`](https://github.com/earendil-works/pi/tree/main/packages/durable) 的全部文档与示例内容，由英文原版翻译、整理而成。全书内容基于 **v1.2.0**（2026-10-12，当前 npm `latest`）。
 >
 > **原文声明**：该项目为实验性（Experimental）项目，API 可能在版本间不经通知即发生变更。
 
@@ -20,8 +20,8 @@
 | 篇章 | 内容 | 对应原文 |
 |---|---|---|
 | **第一篇 概述与快速上手** | README 全文中文版：安装、快速上手、27 个主题的使用指南 | `README.md` |
-| **第二篇 规范说明书** | Pico5 规范全文中文版（13 章），按主题拆为 6 节 | `docs/spec.md` |
-| **第三篇 设计文档** | 实现计划、Chord 使用方式、Chord 差异调研 | `docs/pico-v5-handoff.md` 等 3 篇 |
+| **第二篇 规范说明书** | Durable 规范全文中文版（13 章，4747→5340 行），按主题拆为 6 节 | `docs/spec.md` |
+| **第三篇 设计文档（存档）** | 实现计划、Chord 使用方式、Chord 差异调研 | `docs/pico-v5-handoff.md` 等 3 篇（上游已于 v1.2.0 移除，本篇为 v1.1.0 存档翻译） |
 | **第四篇 示例教程** | 32 个可运行示例的中文逐段解读，从会话基础到完整编码智能体 | `test/examples/` |
 
 原仓库的源码与测试未收录在本书中，可在上游仓库 [earendil-works/pi · packages/durable](https://github.com/earendil-works/pi/tree/main/packages/durable) 查阅；书中各篇的「本篇译自」引用块均已链接到对应的英文原文。
@@ -29,7 +29,7 @@
 ## 如何阅读
 
 - **想快速了解能做什么**：读第一篇的"快速上手"，再浏览第四篇的示例 14-19（聊天、流式、打印模式、JSON 模式）。
-- **想理解设计原理**：读第二篇规范说明书，配合第三篇实现计划。
+- **想理解设计原理**：读第二篇规范说明书，配合第三篇实现计划（注意：第三篇为上游已移除的历史文档存档） 。
 - **想动手实践**：按第四篇示例教程逐个运行，示例 00-13 讲底层机制（会话、文档、分叉、监听、Harness），示例 14-31 讲完整用法（子代理、压缩、编码智能体、计划模式等）。
 
 ## 运行示例

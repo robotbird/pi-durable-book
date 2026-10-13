@@ -47,14 +47,14 @@ const read = defineTool({
 	name: "read",
 	description: "Read a file",
 	parameters: Type.Object({ path: Type.String() }),
-	execute: async (args) => ({ content: [{ type: "text", text: `contents of ${args.path}` }] }),
+	execute: async (args) => ({ output: [{ type: "text", text: `contents of ${args.path}` }] }),
 });
 const Files = defineExtension({ name: "files", tools: [read] });
 const registry = createRegistry();
 registry.install(Files);
 ```
 
-头注释给出 Harness 的定义：Session + 会话句柄 + 持久任务；扩展代码（工具、prompt section、hook、任务）以命名扩展的形式装进应用持有的 registry，registry 里的东西不落盘——它就是本进程的代码。`defineTool` 用 pi-ai 的 `Type.Object` 声明参数 schema，`execute` 返回文本内容；`defineExtension` 把工具打包成名为 "files" 的扩展；`createRegistry()` 建注册表，`registry.install()` 完成安装。
+头注释给出 Harness 的定义：Session + 会话句柄 + 持久任务；扩展代码（工具、prompt section、hook、任务）以命名扩展的形式装进应用持有的 registry，registry 里的东西不落盘——它就是本进程的代码。`defineTool` 用 pi-ai 的 `Type.Object` 声明参数 schema，`execute` 返回 `output`（给模型看的文本输出）；`defineExtension` 把工具打包成名为 "files" 的扩展；`createRegistry()` 建注册表，`registry.install()` 完成安装。
 
 ### 3. 打开 Harness
 

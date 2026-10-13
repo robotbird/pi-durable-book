@@ -1,6 +1,8 @@
 # Pico5 通过 Chord 使用文档
 
-> **本篇译自** [`docs/pico-v5-chord-usage.md`](https://github.com/earendil-works/pi/blob/main/packages/durable/docs/pico-v5-chord-usage.md)——本包对 Chord 的使用方式。
+> **本篇译自** [`docs/pico-v5-chord-usage.md`](https://github.com/earendil-works/pi/blob/v1.1.0/packages/durable/docs/pico-v5-chord-usage.md)——本包对 Chord 的使用方式。
+>
+> ⚠️ 上游已在 v1.2.0 中移除此文档（`docs/` 现仅保留 spec.md）；本篇为 v1.1.0 及之前版本的存档翻译，链接指向 v1.1.0 历史版本。
 
 本指南使用 [Pico5 规范](https://github.com/earendil-works/pi/blob/main/packages/durable/docs/spec.md) 中的契约。其代码以 `test/chord-guide.test.ts` 编译并运行；请保持两者同步。
 
