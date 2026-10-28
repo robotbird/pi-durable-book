@@ -25,6 +25,7 @@ const context = BACKGROUND_CONTEXT;
 const session = createSession(new MemoryStorage());
 
 const Notes = defineDoc<{ text: string }>({
+	checkpointWhen: () => false,
 	kind: "example.notes",
 	version: 1,
 	scope: "conversation",
@@ -39,7 +40,7 @@ const chat = await session.commit(async (tx) => {
 }, context);
 ```
 
-准备工作：定义熟悉的 Notes 文档，并在创建会话的同一个 commit 里写入初始值 "first"——这保证了"会话存在"与"文档有初值"原子地同时发生，后面订阅才一定有东西可读。
+准备工作：定义熟悉的 Notes 文档（`checkpointWhen: () => false` 是 v1.4.0 起的必填项——普通变更保持为增量 delta，不写完整基线），并在创建会话的同一个 commit 里写入初始值 "first"——这保证了"会话存在"与"文档有初值"原子地同时发生，后面订阅才一定有东西可读。
 
 ### 2. 拿到只读 Chord 状态并订阅
 

@@ -66,7 +66,7 @@ git add -A && git commit -m "全书更新至 vX.Y.Z：<一句话要点列表>" &
 
 ### 8. 可选：X 发布帖
 
-写到 `/Users/robotbird/Downloads/pi-durable-vX.Y.Z-X发布帖.md`：完整单帖版（用户是 Premium，不限字符）+ 备选精简版；结构：一句话定位 → 新能力逐条（emoji 编号）→ ⚠️ 破坏性变更 → 文档/手册链接 + `#AIAgents #OpenSource #LLM`。手册同步完成后才能写"已同步"。
+按 [references/x-post.md](references/x-post.md) 的模板生成，写到 `/Users/robotbird/Downloads/pi-durable-vX.Y.Z-X发布帖.md`：完整单帖版（用户是 Premium，不限字符）+ 备选精简版。模板含结构、风格规则、如实性红线（手册未同步不得写"已同步"）与历史实例路径。手册同步完成后才能写"已同步"。
 
 ## 陷阱清单（本会话实测）
 

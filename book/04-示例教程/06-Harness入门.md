@@ -69,6 +69,7 @@ const harness = await Harness.open(new MemoryStorage(), { models: createModels()
 
 ```ts
 const Notes = defineDoc<{ text: string }>({
+	checkpointWhen: () => false,
 	kind: "example.notes",
 	version: 1,
 	scope: "conversation",
@@ -89,7 +90,7 @@ const root = await harness.root(context, {
 });
 ```
 
-根会话的 ID 恒为 1。第一次调用 `harness.root()` 会一次性创建：根会话本身、它的内建文档、`agent` 选项（这里是 `thinkingLevel: "low"`），以及 `init` 回调写入的内容——全部在一个 commit 里。之后的调用（包括进程重启之后）原样返回它，并忽略两个选项。`init` 里用熟悉的 `tx.doc()` 给 Notes 写入 "root notes"。
+根会话的 ID 恒为 1。第一次调用 `harness.root()` 会一次性创建：根会话本身、它的内建文档、`agent` 选项（这里是 `thinkingLevel: "low"`），以及 `init` 回调写入的内容——全部在一个 commit 里。之后的调用（包括进程重启之后）原样返回它，并忽略两个选项。`init` 里用熟悉的 `tx.doc()` 给 Notes 写入 "root notes"。另外，Notes 定义里的 `checkpointWhen: () => false` 是 v1.4.0 起的必填项（没有默认值）：普通变更保持为增量 delta，不写完整基线。
 
 ### 5. 存的是名字，用的是对象
 
